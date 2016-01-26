@@ -1,0 +1,51 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry title="apkPath" field="apkPath"
+           description="${%description.apkPath('http://ant.apache.org/manual/Types/fileset.html')}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="keepRoot" field="keepRoot" description="${%description.keepRoot}">
+    <f:checkbox />
+  </f:entry>
+
+  <f:entry title="whiteList" field="whiteList" description="${%description.whiteList}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="oldMapping" field="oldMapping"
+           description="${%description.oldMapping('http://ant.apache.org/manual/Types/fileset.html')}">
+    <f:textbox />
+  </f:entry>
+  
+  <f:entry title="compress" field="compress" description="${%description.compress}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="signPath" field="signPath"
+           description="${%description.signPath('http://ant.apache.org/manual/Types/fileset.html')}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="storePass" field="storePass" description="${%description.storePass}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="keyPass" field="keyPass" description="${%description.keyPass}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="alias" field="alias" description="${%description.alias}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="metaName" field="metaName" description="${%description.metaName}">
+    <f:textbox />
+  </f:entry>
+
+  <f:entry title="outFolder" field="outFolder"
+           description="${%description.outFolder('http://ant.apache.org/manual/Types/fileset.html')}">
+    <f:textbox />
+  </f:entry>
+
+</j:jelly>
